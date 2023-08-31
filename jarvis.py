@@ -130,7 +130,7 @@ if __name__ == "__main__":
             speak("Opening Netflix")
 
 
-        elif "weather report" in query:
+        elif "weather report" or "temperature" in query:
 
             api_key="adca572add04dcfd62ce4f954e354b08"
             base_url="https://api.openweathermap.org/data/2.5/weather?"
@@ -236,16 +236,16 @@ if __name__ == "__main__":
 
 
         elif 'open code' in query:
-            codePath = "C:\\Users\\Devil\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe"
+            codePath = "Your Code Path"
             os.startfile(codePath)
 
 
-        elif 'email to Sonu' in query:
+        elif 'email to Vishwas' in query:
 
             try:
                 speak("What should I say?")
                 content = takeCommand()
-                to = "sg8633877@gmail.com"    
+                to = "vishwasgupta666@gmail.com"    
                 sendEmail(to, content)
                 speak("Email has been sent!")
 
